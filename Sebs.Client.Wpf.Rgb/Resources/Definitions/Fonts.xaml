@@ -1,0 +1,23 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=System.Runtime"
+                    >
+    
+    <!--Font Family-->
+    <FontFamily x:Key="FontAwesome">/Resources/Fonts/#FontAwesome</FontFamily>
+    <FontFamily x:Key="LatoThin">/Resources/Fonts/#Lato Thin</FontFamily>
+    <FontFamily x:Key="LatoRegular">/Resources/Fonts/#Lato Regular</FontFamily>
+    <FontFamily x:Key="LatoItalic">/Resources/Fonts/#Lato Italic</FontFamily>
+    <FontFamily x:Key="LatoBold">/Resources/Fonts/#Lato Bold</FontFamily>
+    
+    <!--Font Size-->
+    <system:Double x:Key="xxSmall">6</system:Double>
+    <system:Double x:Key="xSmall">8</system:Double>
+    <system:Double x:Key="Small">12</system:Double>
+    <system:Double x:Key="Medium">16</system:Double>
+    <system:Double x:Key="Large">20</system:Double>
+    <system:Double x:Key="xLarge">24</system:Double>
+    <system:Double x:Key="xxLarge">32</system:Double>
+    <system:Double x:Key="3xLarge">36</system:Double>
+
+</ResourceDictionary>
