@@ -1,0 +1,19 @@
+﻿@model RgbModel
+
+@{
+    ViewData["Title"] = "Home Page";
+    var color = Model;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <div class="d-flex justify-content-center">
+        <div class="rectangle border border-primary">
+            <p id="rgbColorId" class="h-100">Color Received</p>
+        </div>
+    </div>
+</div>
+
+
+<script src="~/lib/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/site.js"></script>

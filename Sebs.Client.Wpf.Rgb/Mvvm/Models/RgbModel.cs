@@ -10,6 +10,7 @@ namespace Sebs.Client.Wpf.Rgb.Models
     /// </summary>
     public class RgbModel : BaseModel
     {
+        public string ColorName { get; set; }
         public byte Red { get; set; }
         public byte Green { get; set; }
         public byte Blue { get; set; }

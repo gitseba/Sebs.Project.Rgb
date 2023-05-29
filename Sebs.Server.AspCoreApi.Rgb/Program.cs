@@ -4,8 +4,19 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Register SignalR services
-builder.Services.AddSignalR();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("DisableCorsPolicy",
+        builder =>
+        {
+            builder.WithOrigins("https://localhost:7283")
+                   .AllowAnyOrigin()
+                   .AllowAnyMethod()
+                   .AllowAnyHeader();
+        });
+});
+builder.Services.AddSignalR();
 
 /**************************************************************************/
 builder.Services.AddControllers();
@@ -21,12 +32,14 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseCors("DisableCorsPolicy");
 app.UseHttpsRedirection();
+
 
 app.UseAuthorization();
 
 app.MapControllers();
+
 
 // Use SignalR
 app.UseRouting()
@@ -34,4 +47,5 @@ app.UseRouting()
     {
         endpoints.MapHub<RgbHub>("/rgb");
     });
+
 app.Run();

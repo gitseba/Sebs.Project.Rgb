@@ -8,6 +8,7 @@ namespace Sebs.Common.Rgb.Models
     /// </summary>
     public class RgbModel
     {
+        public string ColorName { get; set; }
         public byte Red { get; set; }
         public byte Green { get; set; }
         public byte Blue { get; set; }

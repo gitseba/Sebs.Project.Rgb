@@ -10,7 +10,7 @@
         x:Name="this" Title="Shell" 
         WindowState="{Binding WindowState}" WindowStyle="None"
         AllowsTransparency="True" WindowStartupLocation="CenterScreen"
-        Height="450" Width="450" MinHeight="400" MinWidth="400">
+        Height="800" Width="450" MinHeight="800" MinWidth="400">
 
     <!--Window Chrome => Add resize, drag... functionality to non-client area
         link: https://docs.microsoft.com/en-us/dotnet/api/system.windows.shell.windowchrome?view=windowsdesktop-6.0-->

@@ -39,7 +39,8 @@ namespace Sebs.Client.Wpf.Rgb.Mvvm.ViewModel
             try
             {
                 var color = new RgbModel()
-                {
+                { 
+                    ColorName = "Sebs.Color",
                     Red = Rgb.Red,
                     Green = Rgb.Green,
                     Blue = Rgb.Blue,
